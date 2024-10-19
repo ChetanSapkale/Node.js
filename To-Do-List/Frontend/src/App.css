@@ -1,0 +1,121 @@
+.todo-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f4f8; /* Soft blue-gray background */
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cfd8dc;
+  transition: transform 0.3s ease-in-out;
+}
+
+.todo-container:hover {
+  transform: translateY(-10px);
+}
+
+h1 {
+  text-align: center;
+  color: #2e3a59; /* Darker blue-gray for title */
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.todo-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #b0bec5; /* Light gray-blue border */
+  border-radius: 8px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input:focus {
+  border-color: #42a5f5; /* Light blue on focus */
+}
+
+.add-button {
+  padding: 12px 20px;
+  background-color: #1de9b6; /* Vivid teal */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #00bfa5; /* Darker teal on hover */
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 5px solid #42a5f5; /* Light blue border */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.task-text {
+  flex: 1;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #546e7a; /* Slate-gray for text */
+}
+
+.todo-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.edit-button {
+  background-color: #ffab40; /* Soft orange for edit */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #ff9100; /* Darker orange on hover */
+}
+
+.delete-button {
+  background-color: #f44336; /* Bright red for delete */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
